@@ -9,6 +9,10 @@ jobs:
                 name: Install npm dependencies
                 command: | 
                     npm install --save
+            - run:
+                name: Run unit tests
+                command: | 
+                    npm run test
 workflows:
     build_test:
         jobs:
