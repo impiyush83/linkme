@@ -8,7 +8,7 @@
     "url": "git+https://github.com/impiyush83/linkme.git"
   },
   "engines": {
-    "node": ">=8.9.1"
+    "node": ">=10.19.0"
   },
   "scripts": {
     "precommit": "npm run lint",
