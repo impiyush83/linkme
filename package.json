@@ -14,7 +14,7 @@
     "precommit": "npm run lint",
     "start": "npm install && \"node_modules/.bin/nodemon\" index.js",
     "lint": "eslint *.js ./lib/**/*.js && echo Lint Passed ❤",
-    "test": "NODE_ENV=testing mocha --ui tdd tests/* --recursive"
+    "test": "NODE_ENV=testing mocha --ui tdd tests/* --recursive --reporter-options reportDir=test-results,reportFilename=test-results"
   },
   "dependencies": {
     "body-parser": "1.18.2",

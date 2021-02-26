@@ -13,6 +13,8 @@ jobs:
                 name: Run unit tests
                 command: | 
                     npm run test
+            - store_test_results:
+                path: test-results
 workflows:
     build_test:
         jobs:
