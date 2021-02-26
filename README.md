@@ -1,3 +1,6 @@
+[![impiyush83](https://circleci.com/gh/impiyush83/linkme.svg?style=svg)](https://app.circleci.com/pipelines/github/impiyush83/linkme)
+
+
 # Linkme Service
 A web-server (with HTTP APIs) that handles all tasks required for a linkme service.
 
