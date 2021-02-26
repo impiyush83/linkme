@@ -9,4 +9,8 @@ jobs:
                 name: Install npm dependencies
                 command: | 
                     npm install --save
+workflows:
+    build_test:
+        jobs:
+            - run_tests
 
