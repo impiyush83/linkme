@@ -22,14 +22,13 @@ A web-server (with HTTP APIs) that handles all tasks required for a linkme servi
 
 - This is a similar to linktree.
 - No auth service is developed, it is assumed that user is logged in. 
-- To know which user is hitting the API we are adding userId for the post request in ProductRating API.
 - Every *user can add any number of links*. 
 
 
 ## Explanation
 
 - As per the, linkme service it is should be  read-heavy than compared to writes. At peak times, if a  product a trending the writes can be heavy. 
--  We will focus on retrieval of ratings. Hence, as it is **read heavy**. 
+-  We will focus on retrieval of links. Hence, as it is **read heavy**. 
 -  Also among all the NOSQL DB's we have chosen *MongoDB* document data store, because it provides atomicity at the document level & is strongly consistent (providing CP of the CAP theorem).
 
 ----

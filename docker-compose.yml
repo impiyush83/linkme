@@ -1,0 +1,17 @@
+version: "3"
+services:
+  linkme:
+    env_file:
+      - .env
+    container_name: linkme
+    network_mode: "bridge"
+    build: .
+    command: npm run start
+    ports:
+      - "27017:27017"
+      - "6000:6000"
+    external_links:
+      - mongo:mongo
+    volumes:
+      - "./:/usr/src/app"
+      - /usr/src/app/node_modules
