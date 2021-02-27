@@ -20,7 +20,7 @@ A web-server (with HTTP APIs) that handles all tasks required for a linkme servi
 
 ## Assumptions
 
-- This is a similar to linktree 
+- This is a similar to linktree.
 - No auth service is developed, it is assumed that user is logged in. 
 - To know which user is hitting the API we are adding userId for the post request in ProductRating API.
 - Every *user can add any number of links*. 
